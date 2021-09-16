@@ -1,0 +1,96 @@
+html {
+    /*background-color: rgb(69, 45, 100);*/
+    /*background: radial-gradient(circle, rgba(102, 121, 9, 1) 0%, rgba(0, 212, 255, 1) 100%);*/
+    background: radial-gradient(circle, rgb(255, 174, 0) 0%,rgba(255, 0, 0, 0.747) 100%);
+    font-family: sans-serif;
+  }
+
+body{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 416px;
+    width: 332px;
+    
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(141, 75, 0) 0%, rgb(143, 1, 1) 90.1% );
+    
+    color: bisque;    
+    flex-shrink: 0;
+    border-radius: 3px;
+}
+.screen {
+    height: 75px;
+    width: 316px;
+    margin: 10px 0px 10px 0px;
+    background-color: rgb(63, 63, 63);
+    border-radius: 3px;
+
+    font-size: 63px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.buttons {
+    display: flex;
+}
+button {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)
+}
+button {
+   height: 63.2px;
+   width: 79px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   
+   border-radius: 3px;
+   display: block;
+   border: none;
+ }
+
+ button:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+ button:active {
+   /*background-position: center; /* change the direction of the change here */
+   background-size: 1000% auto;
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+#spaceBox1 {
+    flex-grow: 0.4;
+    /*background-color: azure;*/
+    width: 100%;
+}
+
+#spaceBox2 {
+    height: 10px;
+    flex-grow: 0.1;
+    /*background-color: azure;*/
+    width: 100%;
+}
